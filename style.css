@@ -1,0 +1,381 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'Neuzeit-Grotesk';
+    src: url('assets/fonts/Neuzeit-Grotesk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neuzeit-Grotesk-light';
+    src: url('assets/fonts/Neuzeit-Grotesk-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neuzeit-Grotesk', sans-serif;
+}
+
+/* Typography */
+h1 {
+    font-size: 76.29px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 61.04px;
+}
+
+h3 {
+    font-size: 48.83px;
+}
+
+h4 {
+    font-size: 39.06px;
+}
+
+h5 {
+    font-size: 31.25px;
+}
+
+h6 {
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+small {
+    font-size: 16px;
+}
+
+/* Body styles */
+body {
+    background: #f0f0f0;
+}
+
+/* Navigation styles */
+nav {
+    width: 100vw;
+    padding: 10px 5%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #e31837;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a.active {
+    color: #e31837;
+}
+
+.logo {
+    width: 40px;
+}
+
+.icon-link {
+    font-size: 20px;
+    color: black;
+}
+
+.hide-bars-icon {
+    display: none;
+}
+
+/* Additional navigation bar */
+.additional-nav {
+    background: black;
+    width: 100vw;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Main content container */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+}
+
+/* MPU container styles */
+.MPU-container {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin: 5% 0;
+    overflow: hidden;
+    color: white;
+}
+
+.advertisement1 {
+    background: url("assets/bg.jpg") no-repeat;
+    background-size: contain;
+}
+
+.text {
+    position: absolute;
+    line-height: 40px;
+}
+
+.ad1-text1 {
+    top: 42.46px;
+    left: -300px;
+    z-index: 10;
+}
+
+.main-img {
+    position: absolute;
+    top: -109.00px;
+    left: 600px;
+    width: 518.25px;
+    height: 518.25px;
+    z-index: 50;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.ad1-text2 {
+    opacity: 0;
+    top: 42.46px;
+    right: 29.84px;
+    text-align: end;
+    z-index: 20;
+}
+
+.ad1-text2-grp1 {
+    line-height: 50px;
+}
+
+.ad1-text2-grp1 h1 span {
+    font-family: 'Neuzeit-Grotesk-light';
+    font-weight: 100;
+}
+
+.mpu-logo {
+    position: absolute;
+    opacity: 0;
+    top: 22.46px;
+    left: 29.84px;
+    width: 100.12px;
+    z-index: 150;
+}
+
+.product-container {
+    width: 200px;
+    height: 250px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.ad1-product {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+.product-container img {
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    text-align: center;
+    z-index: -10;
+}
+
+.info {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.button {
+    opacity: 0;
+}
+
+.ad1-btn {
+    position: absolute;
+    right: 29.84px;
+    bottom: 42.46px;
+    z-index: 50;
+}
+
+.ad1-btn span {
+    background: #ffc40c;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: 0.5s ease-in-out;
+}
+
+.ad1-btn span:hover {
+    display: inline-block;
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hide-bars-icon {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 35.83px;
+    }
+
+    h2 {
+        font-size: 29.86px;
+    }
+
+    h3 {
+        font-size: 24.19px;
+    }
+
+    h4 {
+        font-size: 20.16px;
+    }
+
+    h5 {
+        font-size: 17.28px;
+    }
+
+    h6 {
+        font-size: 14.4px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    small {
+        font-size: 10px;
+    }
+
+    .MPU-container {
+        width: 300px;
+        height: 150px;
+        position: relative;
+    }
+
+    .text {
+        line-height: 20px;
+    }
+
+    .ad1-text1 {
+        top: 14.27px;
+        left: -100px;
+    }
+
+    .ad1-text2 {
+        top: 14.27px;
+        right: 15.70px;
+    }
+
+    .ad1-text2-grp1 {
+        line-height: 25px;
+    }
+
+    .mpu-logo {
+        top: 5.27px;
+        left: 15.70px;
+        width: 41px;
+        opacity: 0;
+    }
+
+    .ad1-btn {
+        right: 15.70px;
+        bottom: 24.27px;
+        z-index: 50;
+    }
+
+    .ad1-btn span {
+        font-size: 10px;
+    }
+
+    .ad1-btn span:hover {
+        transform: none;
+    }
+
+    .main-img {
+        top: -55.00px;
+        left: 300px;
+        height: 258.75px;
+        width: 258.75px;
+        opacity: 1;
+    }
+}
